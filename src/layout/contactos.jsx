@@ -14,18 +14,21 @@ function ContactUs()
 
                 <div className="mb-3">
                     <label className="form-label">Nombre</label>
-                    <input type="text" id="name" name="name" className="form-control" required/>
+                    <br></br>
+                    <input type="text" id="name" name="name" className="form-control" style={{ width: '430px' }} required/>
                 </div>
 
                 <div className="mb-3">
                     <label className="form-label">Direccion de email</label>
-                    <input className="form-control" type="email" id="email" name="email" onBlur={(e) => validateEmail(e.target.value)} required/>
+                    <br></br>
+                    <input className="form-control" type="email" id="email" name="email" style={{ width: '430px' }} required/>
                 </div>
                 
 
                 <div className="mb-3">
                     <label className="form-label">Mensage</label>
-                    <textarea className="form-control" type="text" id="message" name="message" rows="4" onBlur={(e) => validateMessage(e.target.value)} required></textarea>
+                    <br></br>
+                    <textarea className="form-control" type="text" id="message" name="message" rows="10" cols='60' required></textarea>
                 </div>
 
                 <button id="submit-form" type="submit" className="btn btn-primary w-100"> Send </button>

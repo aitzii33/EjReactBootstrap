@@ -7,33 +7,33 @@ import '../css/main.css'
 function main()
 {
     return(
-        <body>
+        <body className="container-fluid">
             <Header/>
-            <div class="row mb-3">
-                <div class="col-md-6 mb-4">
+            <div className="row mb-3">
+                <div className="col-md-6 mb-4">
                     <form>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre y apellidos</label>
+                        <div className="mb-3">
+                            <label for="nombre" className="form-label">Nombre y apellidos</label>
                             <br></br>
-                            <input type="text" id="nombre" class="form-control"/>
+                            <input type="text" id="nombre" className="form-control"/>
                         </div>
 
-                        <div class="mb-3">
-                            <label for="comentario" class="form-label">Déjanos tu comentario</label>
+                        <div className="mb-3">
+                            <label for="comentario" className="form-label">Déjanos tu comentario</label>
                             <br></br>
-                            <textarea id="comentario" class="form-control" rows="4"></textarea>
+                            <textarea id="comentario" className="form-control" rows="4"></textarea>
                         </div>
 
-                        <div class="d-flex gap-3">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        <div className="d-flex gap-3">
+                            <button type="submit" className="btn btn-primary">Enviar</button>
                             <br></br>
-                            <button type="reset" class="btn btn-primary">Limpiar</button>
+                            <button type="reset" className="btn btn-primary">Limpiar</button>
                         </div>
                     </form>
                 </div>
 
-                <div class="col-md-6 mb-4">
-                    <label class="form-label">
+                <div className="col-md-6 mb-4">
+                    <label className="form-label">
                         Bootstrap es uno de los frameworks más populares para el desarrollo web front-end, 
                         lanzado inicialmente por Twitter en 2011 con el objetivo de facilitar la creación de sitios y aplicaciones responsivas y modernas. 
                         Utiliza HTML, CSS y JavaScript para ofrecer una amplia gama de componentes reutilizables, como botones, menús, formularios, 
@@ -49,11 +49,7 @@ function main()
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col text-center pt-3">
-                    ZUBIRI MANTEO
-                </div>
-            </div>
+            <Footer/>
         </body>
     );
 }
