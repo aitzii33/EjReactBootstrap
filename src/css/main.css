@@ -1,0 +1,90 @@
+
+/* Background color gradient*/
+.Container {
+  background: #3E5151;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.btn-v {
+  background-color: #3E5151;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-v:hover {
+  background-color: #789e9e;
+  color: #fff;
+}
+
+
+.btn-primary {
+  background-color: #3E5151;
+  border-color: #3E5151;
+  color: #fff;
+  width: 200px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #789e9e;
+  border-color: #789e9e;
+  color: #212529;
+}
+
+
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.imagen-circular {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+
+footer, .col.text-center {
+  color: #fff;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+
+/* Tamaños responsivos específicos */
+@media (min-width: 768px) {
+  .img-fluid {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 992px) {
+  .img-fluid {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .img-fluid {
+    width: 250px;
+    height: 250px;
+  }
+}

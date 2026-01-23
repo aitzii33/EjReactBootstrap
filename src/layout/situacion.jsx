@@ -1,5 +1,5 @@
 
-function boton()
+function Situacion()
 {
     return(
         <>
@@ -8,4 +8,4 @@ function boton()
     );
 }
 
-export default boton;
+export default Situacion;

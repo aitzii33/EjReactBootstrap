@@ -1,5 +1,5 @@
 
-function boton()
+function quienes()
 {
     return(
         <>
@@ -8,4 +8,4 @@ function boton()
     );
 }
 
-export default boton;
+export default quienes;

@@ -1,5 +1,5 @@
 
-function boton()
+function Curso()
 {
     return(
         <>
@@ -8,4 +8,4 @@ function boton()
     );
 }
 
-export default boton;
+export default Curso;
