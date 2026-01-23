@@ -2,28 +2,31 @@ import Header from '../components/C_header.jsx'
 import Footer from '../components/C_footer.jsx'
 import Button from '../components/C_button.jsx'
 
-import { Container } from "reactstrap"
+import '../css/main.css'
 
 function main()
 {
     return(
-        <Container>
+        <body>
             <Header/>
             <div class="row mb-3">
                 <div class="col-md-6 mb-4">
                     <form>
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre y apellidos</label>
+                            <br></br>
                             <input type="text" id="nombre" class="form-control"/>
                         </div>
 
                         <div class="mb-3">
                             <label for="comentario" class="form-label">Déjanos tu comentario</label>
+                            <br></br>
                             <textarea id="comentario" class="form-control" rows="4"></textarea>
                         </div>
 
                         <div class="d-flex gap-3">
                             <button type="submit" class="btn btn-primary">Enviar</button>
+                            <br></br>
                             <button type="reset" class="btn btn-primary">Limpiar</button>
                         </div>
                     </form>
@@ -51,7 +54,7 @@ function main()
                     ZUBIRI MANTEO
                 </div>
             </div>
-        </Container>
+        </body>
     );
 }
 

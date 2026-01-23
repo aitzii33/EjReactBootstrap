@@ -2,6 +2,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 
 import logo from '../img/logo.png'
+import '../css/header.css'
 
 function Header() 
 {
@@ -9,8 +10,11 @@ function Header()
 
   return (
     <>
-      <h1 className="title">ZUBIRI MANTEO</h1>
-      <input type="image" src={logo} alt="logo" />
+      <div class="col-md-4 col-lg-4 col-xl-8">
+        <h1 className="me-3 fs-4 align-items-center">ZUBIRI MANTEO</h1>
+        <input className='imagen-circular img-fluid' type="image" src={logo} alt="logo" />
+      </div>
+      
 
       <Navbar bg="dark" variant="dark">
         <Container>
